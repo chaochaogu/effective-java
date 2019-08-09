@@ -7,17 +7,35 @@ package com.chaochaogu.builder;
  */
 public class NutritionFacts1 {
 
-    private int servingSize; // required
+    /**
+     * required
+     */
+    private int servingSize;
 
-    private int servings; // required
+    /**
+     * required
+     */
+    private int servings;
 
-    private int calories; // optional
+    /**
+     * optional
+     */
+    private int calories;
 
-    private int sodium; // optional
+    /**
+     * optional
+     */
+    private int sodium;
 
-    private int fat; // optional
+    /**
+     * optional
+     */
+    private int fat;
 
-    private int carbohydrate; // optional
+    /**
+     * optional
+     */
+    private int carbohydrate;
 
     public NutritionFacts1() {
     }
