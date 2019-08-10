@@ -17,6 +17,10 @@ public class Main {
 
         NutritionFacts2 cocaCoLa = new NutritionFacts2.Builder(240, 8).calories(100).sodium(35).carbohydrate(27).build();
 
+        NyPizza nyPizza = new NyPizza.Builder(NyPizza.Size.SMALL).addTopping(Pizza.Topping.SAUSAGE).addTopping(Pizza.Topping.ONION).build();
+        Calzone calzone = new Calzone.Builder().addTopping(Pizza.Topping.HAM).sauceInside().build();
+
+
     }
 
 }
