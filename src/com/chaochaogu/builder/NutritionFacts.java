@@ -1,23 +1,41 @@
 package com.chaochaogu.builder;
 
 /**
- * @description: telescoping constructor pattern - does not scale well
+ * telescoping constructor pattern - does not scale well
  * @author chaochao Gu
  * @date 2019/8/9
  */
 public class NutritionFacts {
 
-    private int servingSize; // required
+    /**
+     * required
+     */
+    private int servingSize;
 
-    private int servings; // required
+    /**
+     * required
+     */
+    private int servings;
 
-    private int calories; // optional
+    /**
+     * optional
+     */
+    private int calories;
 
-    private int sodium; // optional
+    /**
+     * optional
+     */
+    private int sodium;
 
-    private int fat; // optional
+    /**
+     * optional
+     */
+    private int fat;
 
-    private int carbohydrate; // optional
+    /**
+     * optional
+     */
+    private int carbohydrate;
 
     public NutritionFacts(int servingSize, int servings){
         this(servingSize, servings, 0);

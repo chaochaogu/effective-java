@@ -1,8 +1,8 @@
 package com.chaochaogu.builder;
 
 /**
+ * Builder pattern
  * @author chaochao Gu
- * @description: Builder pattern
  * @date 2019/8/9
  */
 public class NutritionFacts2 {
