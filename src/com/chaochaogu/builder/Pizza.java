@@ -14,6 +14,7 @@ public abstract class Pizza {
     public enum Topping {HAM, MUSHROOM, ONION, PEPPER, SAUSAGE}
     final Set<Topping> toppings;
     int i = 1;
+    int b = 2;
     abstract static class Builder<T extends Builder<T>> {
         EnumSet<Topping> toppings = EnumSet.noneOf(Topping.class);
 
