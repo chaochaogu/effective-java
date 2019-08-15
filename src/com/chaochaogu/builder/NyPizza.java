@@ -2,6 +2,12 @@ package com.chaochaogu.builder;
 
 import java.util.Objects;
 
+/**
+ * Builder pattern for class hierarchies
+ *
+ * @author chaochao gu
+ * @date 2019/8/10
+ */
 public class NyPizza extends Pizza {
     public enum Size { SMALL, MEDIUM, LARGE }
     private final Size size;

@@ -1,5 +1,10 @@
 package com.chaochaogu.builder;
 
+import com.chaochaogu.singleton.Alex;
+import com.chaochaogu.singleton.DataSourceEnum;
+import com.chaochaogu.singleton.Elvis;
+import com.chaochaogu.singleton.John;
+
 /**
  * @author chaochao Gu
  * @date 2019/8/9
@@ -22,5 +27,4 @@ public class Main {
 
 
     }
-
 }
