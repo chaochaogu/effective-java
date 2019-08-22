@@ -1,4 +1,4 @@
-package com.chaochaogu.interfaced;
+package com.chaochaogu.interfacer;
 
 /**
  * @author chaochao Gu

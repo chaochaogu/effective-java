@@ -3,10 +3,11 @@ package com.chaochaogu.hierarchy;
 
 /**
  * Tagged class - vastly inferior to a class hierarchy !
+ *
  * @author chaochao Gu
  * @date 2019/8/22
  */
-public class Figure {
+public class FigureInferior {
 
     enum Shape {RECTANGLE, CIRCLE}
 
@@ -28,19 +29,21 @@ public class Figure {
 
     /**
      * Constructor for circle
+     *
      * @param radius
      */
-    Figure(double radius) {
+    FigureInferior(double radius) {
         shape = Shape.CIRCLE;
         this.radius = radius;
     }
 
     /**
      * Constructor for rectangle
+     *
      * @param length
      * @param width
      */
-    Figure(double length, double width) {
+    FigureInferior(double length, double width) {
         shape = Shape.CIRCLE;
         this.length = length;
         this.width = width;
