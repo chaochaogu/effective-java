@@ -1,4 +1,4 @@
-package com.chaochaogu.generictype;
+package com.chaochaogu.wildcard;
 
 import java.util.Arrays;
 import java.util.EmptyStackException;
