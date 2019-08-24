@@ -1,9 +1,12 @@
 package com.chaochaogu.wildcard;
 
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.EmptyStackException;
 
 /**
+ * producer-extends, consumer-super（PECS）
+ *
  * @author chaochao Gu
  * @date 2019/8/23
  */
@@ -40,5 +43,24 @@ public class StackWildcard<E> {
         }
     }
 
+    public boolean isEmpty() {
+        if (size == 0) {
+            return true;
+        }
+        return false;
+    }
 
+    // Wildcard type parameter that serves as an E producer
+    public void pushAll(Iterable<? extends E> src) {
+        for (E e : src) {
+            push(e);
+        }
+    }
+
+    // Wildcard type parameter that serves as an E consumer
+    public void popAll(Collection<? super E> dst) {
+        while (!isEmpty()) {
+            dst.add(pop());
+        }
+    }
 }
