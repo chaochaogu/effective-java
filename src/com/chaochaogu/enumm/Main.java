@@ -7,7 +7,8 @@ package com.chaochaogu.enumm;
 public class Main {
 
     public static void main(String[] args) {
-
+        for (Operation op : Operation.values()) {
+            System.out.println(op.name() + " : " + op.ordinal());
+        }
     }
-
 }
