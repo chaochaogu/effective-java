@@ -8,11 +8,24 @@ package com.chaochaogu.enummap;
  */
 public enum Phase {
 
-    SOLID, LIQUID, GAS;
+    /**
+     * 固态
+     */
+    SOLID,
+    LIQUID,
+    GAS;
 
     public enum Transition {
 
-        MELT, FREEZE, BOIL, CONDENSE, SUBLIME, DEPOSIT;
+        /**
+         * 熔化
+         */
+        MELT,
+        FREEZE,
+        BOIL,
+        CONDENSE,
+        SUBLIME,
+        DEPOSIT;
 
         // Rows indexed by from-ordinal, clos by to-ordinal
         private static final Transition[][] TRANSITIONS = {
