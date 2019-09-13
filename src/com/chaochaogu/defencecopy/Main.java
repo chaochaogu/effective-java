@@ -14,6 +14,11 @@ public class Main {
         Date start = new Date();
         Date end = new Date();
         Period p = new Period(start, end);
+        // Modifies the internals of p !
         end.setYear(78);
+
+        // Second attack on the internals of a period instance
+        // Modifies the internals of p !
+        p.end().setYear(78);
     }
 }
