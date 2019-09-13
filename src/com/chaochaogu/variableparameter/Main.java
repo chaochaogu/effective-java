@@ -61,5 +61,39 @@ public class Main {
         }
         throw new AssertionError();
     }
+
+    // Simple use of varargs
+    static int sun(int... args) {
+        int sum = 0;
+        for (int arg : args) {
+            sum += arg;
+        }
+        return sum;
+    }
+
+    // The wrong way to use varargs to pass one or more arguments!
+    static int min(int... args) {
+        if (args.length == 0) {
+            throw new IllegalArgumentException("Too few arguments");
+        }
+        int min = args[0];
+        for (int arg : args) {
+            if (arg < min) {
+                min = arg;
+            }
+        }
+        return min;
+    }
+
+    // The right way to use varargs
+    static int min1(int firstArg, int... remainingArgs) {
+        int min = firstArg;
+        for (int remainArg : remainingArgs) {
+            if (remainArg < min) {
+                min = remainArg;
+            }
+        }
+        return min;
+    }
 }
 
